@@ -141,7 +141,7 @@ const MostTrendyProjects = () => {
         <h4 className="text-[#974216] text-sm pb-1 font-semibold uppercase tracking-widest">
           We Always Choose the Best for You
         </h4>
-        <h1 className="text-black text-5xl font-normal mt-1">
+        <h1 className="text-black md:text-5xl text-4xl font-normal mt-1">
           Most Trendy Projects
         </h1>
         <div className="filterButtons flex flex-wrap justify-center gap-4 mt-10">
