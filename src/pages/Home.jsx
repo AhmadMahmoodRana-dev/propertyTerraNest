@@ -12,7 +12,7 @@ const Home = () => {
       <Header/>
       <SearchContainer/>
       <MostTrendyProjects/>
-      {/* <AllServices/> */}
+      <AllServices/>
     </div>
   )
 }
