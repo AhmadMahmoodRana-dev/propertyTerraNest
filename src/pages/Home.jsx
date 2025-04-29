@@ -6,6 +6,7 @@ import MostTrendyProjects from '../components/MostTrendyProjects'
 import AllServices from '../components/AllServices'
 import AboutUs from '../components/AboutUs'
 import WhyUs from '../components/WhyUs'
+import ContactUs from '../components/ContactUs'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <AllServices/>
       <AboutUs/>
       <WhyUs/>
+      <ContactUs/>
     </div>
   )
 }

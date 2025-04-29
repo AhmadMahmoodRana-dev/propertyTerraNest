@@ -9,3 +9,16 @@ h5,a,span,label,::placeholder,input,button {
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
 }
+
+
+.contact-bg {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.673), 
+      rgba(0, 0, 0, 0.673)
+    ),
+    url("./assets/contact-us.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
