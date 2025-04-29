@@ -14,7 +14,7 @@ const AboutUs = () => {
         </h1> {/* Adjust font size for different screen sizes */}
         <p className="w-full md:w-[640px] tracking-wider text-white text-lg sm:text-xl italic text-center md:text-left">
           {/* Ensure text is responsive */}
-          Why Terra Nest Properties? <br /> At Terra Nest Properties, we combine deep
+          Why Prime Haven Properties? <br /> At Prime Haven Properties, we combine deep
           market expertise with a passion for delivering personalized service.
           Whether you’re buying, selling, renting, or investing, our dedicated
           team is here to provide a smooth, hassle-free experience, supporting

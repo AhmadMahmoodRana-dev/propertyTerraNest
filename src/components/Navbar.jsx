@@ -12,12 +12,12 @@ const Navbar = () => {
       {/* Top Contact Bar */}
       <div className="max-w-full mx-auto px-8 py-3 hidden lg:flex items-center justify-between gap-4">
         <div className="flex gap-8">
-          <a className="flex items-center gap-2 text-sm tracking-wider">
+          {/* <a className="flex items-center gap-2 text-sm tracking-wider">
             <img src={phone} alt="Phone" className="h-5" /> +971 4 570 0137
           </a>
           <a className="flex items-center gap-2 text-sm tracking-wider">
             <img src={email} alt="Email" className="h-5" /> Info@terranest.ae
-          </a>
+          </a> */}
         </div>
         <div className="flex gap-8">
           <a className="flex items-center gap-2 text-sm tracking-wider">
