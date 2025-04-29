@@ -5,6 +5,7 @@ import SearchContainer from '../components/SearchContainer'
 import MostTrendyProjects from '../components/MostTrendyProjects'
 import AllServices from '../components/AllServices'
 import AboutUs from '../components/AboutUs'
+import WhyUs from '../components/WhyUs'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <MostTrendyProjects/>
       <AllServices/>
       <AboutUs/>
+      <WhyUs/>
     </div>
   )
 }
