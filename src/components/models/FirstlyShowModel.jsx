@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Dialog,
   DialogBackdrop,
@@ -7,12 +7,26 @@ import {
 import onetime from "../../assets/onetime.jpg";
 import { RxCross1 } from "react-icons/rx";
 
-
 const FirstlyShowModel = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
+  const [dontShowAgain, setDontShowAgain] = useState(false);
+
+  useEffect(() => {
+    const popupClosed = localStorage.getItem("newsletterPopupClosed");
+    if (popupClosed !== "true") {
+      setOpen(true);
+    }
+  }, []);
+
+  const handleClose = () => {
+    if (dontShowAgain) {
+      localStorage.setItem("newsletterPopupClosed", "true");
+    }
+    setOpen(false);
+  };
 
   return (
-    <Dialog open={open} onClose={setOpen} className="relative z-10">
+    <Dialog open={open} onClose={handleClose} className="relative z-10">
       <DialogBackdrop
         transition
         className="fixed inset-0 bg-gray-500/75 transition-opacity data-closed:opacity-0 data-enter:duration-300 data-enter:ease-out data-leave:duration-200 data-leave:ease-in"
@@ -28,10 +42,14 @@ const FirstlyShowModel = () => {
               <div className="flex flex-col sm:flex-row w-full h-full">
                 {/* Image Section */}
                 <div className="w-full sm:w-[50%] h-full">
-                <RxCross1 className="absolute right-5 top-3 cursor-pointer" color="#3e4044" onClick={() => setOpen(!open)} />
-                  <img 
-                    src={onetime} 
-                    alt="Newsletter" 
+                  <RxCross1
+                    className="absolute right-5 top-3 cursor-pointer"
+                    color="#3e4044"
+                    onClick={handleClose}
+                  />
+                  <img
+                    src={onetime}
+                    alt="Newsletter"
                     className="w-full h-auto object-cover"
                   />
                 </div>
@@ -59,13 +77,18 @@ const FirstlyShowModel = () => {
                     />
                   </div>
 
-                  <button className="w-full bg-[#974216] my-1 text-white py-2 sm:py-3 rounded-sm text-sm sm:text-base md:text-lg">
+                  <button
+                    onClick={handleClose}
+                    className="w-full bg-[#974216] my-1 text-white py-2 sm:py-3 rounded-sm text-sm sm:text-base md:text-lg"
+                  >
                     Subscribe
                   </button>
 
                   <div className="flex mt-4 gap-2 sm:gap-4 items-start">
                     <input
                       type="checkbox"
+                      checked={dontShowAgain}
+                      onChange={(e) => setDontShowAgain(e.target.checked)}
                       className="h-4 w-4 sm:h-5 sm:w-5 mt-1 accent-blue-600 rounded border-gray-200 focus:ring-1 outline-none focus:ring-blue-500"
                     />
                     <p className="text-xs sm:text-sm md:text-base text-gray-800 font-light tracking-wider italic">

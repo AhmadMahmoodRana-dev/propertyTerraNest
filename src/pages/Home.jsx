@@ -7,6 +7,8 @@ import AllServices from '../components/AllServices'
 import AboutUs from '../components/AboutUs'
 import WhyUs from '../components/WhyUs'
 import ContactUs from '../components/ContactUs'
+import LatestNews from '../components/LatestNews'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -19,6 +21,8 @@ const Home = () => {
       <AboutUs/>
       <WhyUs/>
       <ContactUs/>
+      <LatestNews/>
+      <Footer/>
     </div>
   )
 }
