@@ -29,7 +29,7 @@ const LatestNews = () => {
     }
   ]
   return (
-    <div className="w-full h-auto bg-white pt-2 xl:px-32 px-12 pb-20">
+    <div className="w-full h-auto bg-white pt-10 xl:px-32 px-12 pb-20">
       <div className="filterSection flex flex-col justify-center items-center pb-10">
         <h4 className="text-[#974216] text-sm pb-1 font-semibold uppercase tracking-widest">
           LATEST NEWS
