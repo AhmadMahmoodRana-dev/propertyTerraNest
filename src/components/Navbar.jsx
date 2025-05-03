@@ -6,19 +6,37 @@ import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+const navItems =[
+  {
+    id: 1,
+    name: "Home",
+    link: "#",
+  },
+  {
+    id: 2,
+    name: "About Us",
+    link: "#",
+  },
+  {
+    id: 3,
+    name: "Projects",
+    link: "/projects",
+  },
+  {
+    id: 4,
+    name: "Properties",
+    link: "#",
+  },
+  {
+    id: 5,
+    name: "Learn More",
+    link: "#",
+  },
+]
   return (
     <header className="shadow bg-white rounded-bl-3xl rounded-br-3xl sticky top-0 z-50 w-full">
       {/* Top Contact Bar */}
       <div className="max-w-full mx-auto px-8 py-3 hidden lg:flex items-center justify-between gap-4">
-        <div className="flex gap-8">
-          {/* <a className="flex items-center gap-2 text-sm tracking-wider">
-            <img src={phone} alt="Phone" className="h-5" /> +971 4 570 0137
-          </a>
-          <a className="flex items-center gap-2 text-sm tracking-wider">
-            <img src={email} alt="Email" className="h-5" /> Info@terranest.ae
-          </a> */}
-        </div>
         <div className="flex gap-8">
           <a className="flex items-center gap-2 text-sm tracking-wider">
             My Wishlist (0)
@@ -32,30 +50,22 @@ const Navbar = () => {
 
       {/* Main Navigation */}
       <div className="max-w-full mx-auto px-4 sm:px-8 lg:px-28 pt-3 pb-6 flex items-center justify-between gap-4">
-        {/* Logo */}
-        {/* <a href="#" className="flex items-center gap-2">
-          <img
-            src="https://ext.same-assets.com/752540071/1942925134.png"
-            alt="Terra Nest Logo"
-            className="h-8 md:h-10"
-          />
-        </a> */}
         <a href="#" className="flex items-center gap-2 text-3xl text-[#974216] font-semibold">
           Prime Haven
         </a>
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex gap-6 xl:gap-12">
-          {["Home", "About Us", "Projects", "Properties", "Learn More"].map(
+          {navItems.map(
             (item) => (
               <motion.a
-                key={item}
-                href="#"
+                key={item.id}
+                href={item.link}
                 className="relative text-[#313337] font-medium hover:text-[#974216] transition"
                 whileHover="hover"
               >
                 <span className="relative">
-                  {item}
+                  {item.name}
                   <motion.div
                     className="absolute bottom-0 left-0 w-full h-[2px] bg-[#974216]"
                     variants={{
@@ -111,14 +121,14 @@ const Navbar = () => {
           <div className="bg-white rounded-lg shadow-lg p-6">
             {/* Mobile Navigation Links */}
             <nav className="flex flex-col gap-4 mb-6">
-              {["Home", "About Us", "Projects", "Properties", "Learn More"].map(
+              {navItems.map(
                 (item) => (
                   <a
-                    key={item}
-                    href="#"
+                    key={item.id}
+                    href={item.link}
                     className="text-[#313337] font-medium hover:text-[#974216]"
                   >
-                    {item}
+                    {item.name}
                   </a>
                 )
               )}

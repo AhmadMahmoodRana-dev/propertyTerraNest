@@ -2,6 +2,7 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import FirstlyShowModel from './components/models/FirstlyShowModel'
+import Projects from './pages/Projects'
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
     <FirstlyShowModel/>
       <Routes>
         <Route path='/' element={<Home/>} />
+        <Route path='/projects' element={<Projects/>} />
       </Routes>
     </div>
   )
