@@ -1,5 +1,3 @@
-
-
 export default function LatestNewsCard({image,date,mainHeading,spanHeading,secondaryHeading})  {
   return (
     <div className="rounded-lg overflow-hidden bg-white hover:cursor-pointer">
@@ -21,7 +19,7 @@ export default function LatestNewsCard({image,date,mainHeading,spanHeading,secon
       </div>
 
       <div className="">
-        <h1 className="text-lg flex gap-8 py-3">{mainHeading}<span className="text-gray-600">{spanHeading}</span></h1>
+        <h1 className="text-lg flex gap-8 py-3">{mainHeading}<span className="text-gray-600 text-[1rem]">{spanHeading}</span></h1>
         <h1 className="font-semibold text-2xl hover:text-[#974216] transition-all duration-400 ease-in-out">{secondaryHeading} ...</h1>
       </div>
     </div>

@@ -5,29 +5,29 @@ import latest2 from "../assets/latest2.jpg";
 import latest3 from "../assets/latest3.jpg";
 
 const LatestNews = () => {
-  const data=[
+  const data = [
     {
-      img:latest1,
-      date:"Dec 26,2024",
-      mainHeading:"Prime Haven Properties",
-      spanHeading:"Home Improvement",
-      secondaryHeading:"Renting in Dubai – Tips for Te"
+      img: latest1,
+      date: "Dec 26,2024",
+      mainHeading: "Terra Nest Properties",
+      spanHeading: "Home Improvement",
+      secondaryHeading: "Renting in Dubai – Tips for Te",
     },
     {
-      img:latest2,
-      date:"Dec 26,2024",
-      mainHeading:"Prime Haven Properties",
-      spanHeading:"Buying a Home",
-      secondaryHeading:"Secondary Market Properties in"
+      img: latest2,
+      date: "Dec 26,2024",
+      mainHeading: "Terra Nest Properties",
+      spanHeading: "Buying a Home",
+      secondaryHeading: "Secondary Market Properties in",
     },
     {
-      img:latest3,
-      date:"Dec 26,2024",
-      mainHeading:"Prime Haven Properties",
-      spanHeading:"Home Improvement",
-      secondaryHeading:"Why Invest in Off-Plan Propert"
-    }
-  ]
+      img: latest3,
+      date: "Dec 26,2024",
+      mainHeading: "Terra Nest Properties",
+      spanHeading: "Home Improvement",
+      secondaryHeading: "Why Invest in Off-Plan Propert",
+    },
+  ];
   return (
     <div className="w-full h-auto bg-white pt-10 xl:px-32 px-12 pb-20">
       <div className="filterSection flex flex-col justify-center items-center pb-10">
@@ -39,13 +39,18 @@ const LatestNews = () => {
         </h1>
       </div>
       <div className="main-card-container w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
-      {
-        data.map((item,index) =>{
-          return(
-            <LatestNewsCard key={index} image={item.img} date={item.date} mainHeading={item.mainHeading} spanHeading={item.spanHeading} secondaryHeading={item.secondaryHeading}/>
-          )
-        })
-      }
+        {data.map((item, index) => {
+          return (
+            <LatestNewsCard
+              key={index}
+              image={item.img}
+              date={item.date}
+              mainHeading={item.mainHeading}
+              spanHeading={item.spanHeading}
+              secondaryHeading={item.secondaryHeading}
+            />
+          );
+        })}
       </div>
     </div>
   );

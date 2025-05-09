@@ -13,142 +13,140 @@ import project8 from "../assets/project8.jpg";
 import project9 from "../assets/project9.jpg";
 
 const Projects = () => {
-
-    const Projects = [
-      {
-        id: 1,
-        categories: "Apartment",
-        prices: "AED2.16M",
-        completition: "31-12-2029",
-        developer: "Damac",
-        name: "SeaCrest",
-        location: "Maritime city, Dubai",
-        image: project1,
-        tag: "Pre Sale",
-      },
-      {
-        id: 2,
-        categories: "Apartment",
-        prices: "AED2.16M",
-        completition: "31-12-2029",
-        developer: "Damac",
-        name: "SeaCrest",
-        location: "Maritime city, Dubai",
-        image: project2,
-        tag: "Pre Sale",
-      },
-      {
-        id: 3,
-        categories: "PentHouse",
-        prices: "AED2.16M",
-        completition: "31-12-2029",
-        developer: "Damac",
-        name: "SeaCrest",
-        location: "Maritime city, Dubai",
-        image: project3,
-        tag: "Pre Sale",
-      },
-      {
-        id: 4,
-        categories: "Apartment",
-        prices: "AED2.16M",
-        completition: "31-12-2029",
-        developer: "Damac",
-        name: "SeaCrest",
-        location: "Maritime city, Dubai",
-        image: project4,
-        tag: "Pre Sale",
-      },
-      {
-        id: 5,
-        categories: "Duplex",
-        prices: "AED2.16M",
-        completition: "31-12-2029",
-        developer: "Damac",
-        name: "SeaCrest",
-        location: "Maritime city, Dubai",
-        image: project5,
-        tag: "Pre Sale",
-      },
-      {
-        id: 6,
-        categories: "Villa",
-        prices: "AED2.16M",
-        completition: "31-12-2029",
-        developer: "Damac",
-        name: "SeaCrest",
-        location: "Maritime city, Dubai",
-        image: project6,
-        tag: "Pre Sale",
-      },
-      {
-        id: 7,
-        categories: "Townhouse",
-        prices: "AED2.16M",
-        completition: "31-12-2029",
-        developer: "Damac",
-        name: "SeaCrest",
-        location: "Maritime city, Dubai",
-        image: project7,
-        tag: "Pre Sale",
-      },
-      {
-        id: 8,
-        categories: "Mansion",
-        prices: "AED2.16M",
-        completition: "31-12-2029",
-        developer: "Damac",
-        name: "SeaCrest",
-        location: "Maritime city, Dubai",
-        image: project8,
-        tag: "Pre Sale",
-      },
-      {
-        id: 9,
-        categories: "SkyVilla",
-        prices: "AED2.16M",
-        completition: "31-12-2029",
-        developer: "Damac",
-        name: "SeaCrest",
-        location: "Maritime city, Dubai",
-        image: project9,
-        tag: "Pre Sale",
-      },
-      {
-          id: 10,
-          categories: "Villa",
-          prices: "AED2.16M",
-          completition: "31-12-2029",
-          developer: "Damac",
-          name: "SeaCrest",
-          location: "Maritime city, Dubai",
-          image: project6,
-          tag: "Pre Sale",
-        },
-        {
-          id: 11,
-          categories: "Townhouse",
-          prices: "AED2.16M",
-          completition: "31-12-2029",
-          developer: "Damac",
-          name: "SeaCrest",
-          location: "Maritime city, Dubai",
-          image: project7,
-          tag: "Pre Sale",
-        },
-        {
-          id: 12,
-          categories: "Mansion",
-          prices: "AED2.16M",
-          completition: "31-12-2029",
-          developer: "Damac",
-          name: "SeaCrest",
-          location: "Maritime city, Dubai",
-          image: project8,
-          tag: "Pre Sale",
-        },
-    ];
-  
+  const Projects = [
+    {
+      id: 1,
+      categories: "Apartment",
+      prices: "AED2.16M",
+      completition: "31-12-2029",
+      developer: "Damac",
+      name: "SeaCrest",
+      location: "Maritime city, Dubai",
+      image: project1,
+      tag: "Pre Sale",
+    },
+    {
+      id: 2,
+      categories: "Apartment",
+      prices: "AED2.16M",
+      completition: "31-12-2029",
+      developer: "Damac",
+      name: "SeaCrest",
+      location: "Maritime city, Dubai",
+      image: project2,
+      tag: "Pre Sale",
+    },
+    {
+      id: 3,
+      categories: "PentHouse",
+      prices: "AED2.16M",
+      completition: "31-12-2029",
+      developer: "Damac",
+      name: "SeaCrest",
+      location: "Maritime city, Dubai",
+      image: project3,
+      tag: "Pre Sale",
+    },
+    {
+      id: 4,
+      categories: "Apartment",
+      prices: "AED2.16M",
+      completition: "31-12-2029",
+      developer: "Damac",
+      name: "SeaCrest",
+      location: "Maritime city, Dubai",
+      image: project4,
+      tag: "Pre Sale",
+    },
+    {
+      id: 5,
+      categories: "Duplex",
+      prices: "AED2.16M",
+      completition: "31-12-2029",
+      developer: "Damac",
+      name: "SeaCrest",
+      location: "Maritime city, Dubai",
+      image: project5,
+      tag: "Pre Sale",
+    },
+    {
+      id: 6,
+      categories: "Villa",
+      prices: "AED2.16M",
+      completition: "31-12-2029",
+      developer: "Damac",
+      name: "SeaCrest",
+      location: "Maritime city, Dubai",
+      image: project6,
+      tag: "Pre Sale",
+    },
+    {
+      id: 7,
+      categories: "Townhouse",
+      prices: "AED2.16M",
+      completition: "31-12-2029",
+      developer: "Damac",
+      name: "SeaCrest",
+      location: "Maritime city, Dubai",
+      image: project7,
+      tag: "Pre Sale",
+    },
+    {
+      id: 8,
+      categories: "Mansion",
+      prices: "AED2.16M",
+      completition: "31-12-2029",
+      developer: "Damac",
+      name: "SeaCrest",
+      location: "Maritime city, Dubai",
+      image: project8,
+      tag: "Pre Sale",
+    },
+    {
+      id: 9,
+      categories: "SkyVilla",
+      prices: "AED2.16M",
+      completition: "31-12-2029",
+      developer: "Damac",
+      name: "SeaCrest",
+      location: "Maritime city, Dubai",
+      image: project9,
+      tag: "Pre Sale",
+    },
+    {
+      id: 10,
+      categories: "Villa",
+      prices: "AED2.16M",
+      completition: "31-12-2029",
+      developer: "Damac",
+      name: "SeaCrest",
+      location: "Maritime city, Dubai",
+      image: project6,
+      tag: "Pre Sale",
+    },
+    {
+      id: 11,
+      categories: "Townhouse",
+      prices: "AED2.16M",
+      completition: "31-12-2029",
+      developer: "Damac",
+      name: "SeaCrest",
+      location: "Maritime city, Dubai",
+      image: project7,
+      tag: "Pre Sale",
+    },
+    {
+      id: 12,
+      categories: "Mansion",
+      prices: "AED2.16M",
+      completition: "31-12-2029",
+      developer: "Damac",
+      name: "SeaCrest",
+      location: "Maritime city, Dubai",
+      image: project8,
+      tag: "Pre Sale",
+    },
+  ];
 
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 9;
@@ -208,7 +206,7 @@ const Projects = () => {
           <button
             onClick={() => handlePageChange(currentPage - 1)}
             disabled={currentPage === 1}
-            className="px-4 py-2 bg-gray-300 rounded disabled:opacity-50"
+            className="px-4 py-2 bg-gray-300 rounded disabled:opacity-50 cursor-pointer"
           >
             Previous
           </button>
@@ -216,7 +214,7 @@ const Projects = () => {
             <button
               key={index}
               onClick={() => handlePageChange(index + 1)}
-              className={`px-4 py-2 rounded ${
+              className={`px-4 py-2 rounded cursor-pointer ${
                 currentPage === index + 1
                   ? "bg-black text-white"
                   : "bg-gray-200 text-black"
@@ -228,7 +226,7 @@ const Projects = () => {
           <button
             onClick={() => handlePageChange(currentPage + 1)}
             disabled={currentPage === totalPages}
-            className="px-4 py-2 bg-gray-300 rounded disabled:opacity-50"
+            className="px-4 py-2 bg-gray-300 rounded disabled:opacity-50 cursor-pointer"
           >
             Next
           </button>

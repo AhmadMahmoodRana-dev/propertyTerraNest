@@ -3,14 +3,14 @@ import phone from "../assets/phone.svg";
 import email from "../assets/email.svg";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { motion } from "framer-motion";
-
+import logo from "../assets/logo-two.png"
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 const navItems =[
   {
     id: 1,
     name: "Home",
-    link: "#",
+    link: "/",
   },
   {
     id: 2,
@@ -51,7 +51,7 @@ const navItems =[
       {/* Main Navigation */}
       <div className="max-w-full mx-auto px-4 sm:px-8 lg:px-28 pt-3 pb-6 flex items-center justify-between gap-4">
         <a href="#" className="flex items-center gap-2 text-3xl text-[#974216] font-semibold">
-          Prime Haven
+          <img src={logo} alt="Logo" className="h-12" />
         </a>
 
         {/* Desktop Navigation */}
